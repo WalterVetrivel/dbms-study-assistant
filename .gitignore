@@ -1,0 +1,58 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+
+# --- Secrets and local config ---
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# --- Course material (copyright: never publish textbooks) ---
+data/raw/textbooks/*
+!data/raw/textbooks/.gitkeep
+# Remove the next block if you decide to publish your own notes,
+# syllabus and question bank. data/sample/ is always committed.
+data/raw/notes/*
+!data/raw/notes/.gitkeep
+data/raw/syllabus/*
+!data/raw/syllabus/.gitkeep
+data/raw/question_bank/*
+!data/raw/question_bank/.gitkeep
+
+# --- Generated data (vector store holds copyrighted text; always rebuildable) ---
+data/chroma/*
+!data/chroma/.gitkeep
+data/processed/
+*.sqlite3
+*.parquet
+
+# --- Model caches (sentence-transformers / Hugging Face) ---
+.cache/
+models/
+
+# --- Logs ---
+logs/
+*.log
+
+# --- Editors and OS ---
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

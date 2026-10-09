@@ -1,0 +1,29 @@
+# Install CPU-only PyTorch FIRST (avoids a 2 GB+ CUDA download):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Then:
+#   pip install -r requirements.txt
+
+# Document processing
+pymupdf>=1.24
+
+# Embeddings + vector store
+sentence-transformers>=3.0
+chromadb>=0.5
+
+# LLM client (local Ollama)
+ollama>=0.4
+
+# Agent tools over MCP (official Python SDK v2; FastMCP is now MCPServer)
+mcp>=2.2,<3
+
+# Validation and configuration
+pydantic>=2.7
+pydantic-settings>=2.3
+python-dotenv>=1.0
+
+# User interface
+streamlit>=1.40
+
+# Development
+pytest>=8.0
+ruff>=0.6
